@@ -70,7 +70,7 @@ int main(int argc, const char * argv[]) {
         
     }
     {
-#if 1
+#if 0
         int *p = (int *)malloc(4);
         *p = 10;
         free(p);
@@ -87,11 +87,18 @@ int main(int argc, const char * argv[]) {
         int *p1 = new int();
         int *p2 = new int(5);
         cout << *p0 << endl << *p1 << endl << *p2 << endl;
+        delete p0;
+        delete p1;
+        delete p2;
         int *p3 = new int[3];
         int *p4 = new int[3]();
         int *p5 = new int[3]{};
         int *p6 = new int[3]{ 5 };
         cout << *p3 << endl << *p4 << endl << *p5 << endl << *p6 << endl;
+        delete [] p3;
+        delete [] p4;
+        delete [] p5;
+        delete [] p6;
         
 #endif
     }
