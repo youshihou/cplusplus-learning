@@ -59,8 +59,8 @@
 		035570B72493A8B500183690 /* learning-C++ */ = {
 			isa = PBXGroup;
 			children = (
-				035570B82493A8B500183690 /* main.cpp */,
 				035570C52494F3CA00183690 /* basic-grammar.cpp */,
+				035570B82493A8B500183690 /* main.cpp */,
 			);
 			path = "learning-C++";
 			sourceTree = "<group>";
