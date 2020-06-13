@@ -48,7 +48,7 @@ void func4(int v1, void(*p)(int) = test) {
 }
 
 
-/*         3.extern C             */
+/*         3.extern "C"             */
 //#ifdef __cplusplus
 //extern "C" {
 //#endif

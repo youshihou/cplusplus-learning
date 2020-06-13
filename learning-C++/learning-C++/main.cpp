@@ -35,9 +35,23 @@ struct Person {
     void display() {
         cout << "id = " << m_id << ", age = " << m_age << ", height = " << m_height << endl;
     }
+    
+    
+    Person () {
+        m_age = 0;
+        cout << __func__ << endl;
+    }
+    Person (int age) {
+        m_age = age;
+        cout << __func__ << ", age = " << m_age << endl;
+    }
 };
 
 
+
+Person g_p0; // call Person()
+Person g_p1(); // CARE!!! function declaration
+Person g_p2(10); // call Person(int)
 
 int main(int argc, const char * argv[]) {
     {
@@ -102,9 +116,37 @@ int main(int argc, const char * argv[]) {
         
 #endif
     }
+    {
+#if 0
+        Person p;
+        p = Person(10);
+        
+        Person *p2 = new Person; // call constructor
+        delete p2;
+        
+        Person *p3 = (Person *)malloc(sizeof(Person)); // not call constructor
+        p3->m_age = 10;
+        free(p3);
+#endif
+    }
     
-    
-    
+    {
+#if 1
+        Person p0; // call Person()
+        Person p1(); // CARE!!! function declaration
+        Person p2(11); // call Person(int)
+        
+        
+        Person *p3 = new Person; // call Person()
+        Person *p4 = new Person(); // call Person()
+        Person *p5 = new Person(12); // call Person(int)
+        delete p3;
+        delete p4;
+        delete p5;
+        
+#endif
+    }
+
     
     
     
