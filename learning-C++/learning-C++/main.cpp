@@ -40,28 +40,67 @@ struct Person {
 
 
 int main(int argc, const char * argv[]) {
-//    Person_ pp;
-//    pp.m_age = 20; // CARE!!!
-//    pp.run();
+    {
+#if 0
+//        Person_ pp;
+//        pp.m_age = 20; // CARE!!!
+//        pp.run();
 //
-//    Person p;
-//    p.m_age = 10;
-//    p.run();
-//    Person *p1 = &p;
-//    p1->m_age = 20;
+//        Person p;
+//        p.m_age = 10;
+//        p.run();
+//        Person *p1 = &p;
+//        p1->m_age = 20;
+    
+        
+        Person p;
+        p.m_id = 10;
+        p.m_age = 20;
+        p.m_height = 30;
+        
+        Person *pp = (Person *)&p.m_age;
+        pp->m_id = 40;
+        pp->m_age = 50;
+        
+        p.display(); // CARE!!! this == p, is &p
+        pp->display(); // CARE!!! this == pp, is &p.m_age
+#endif
+        
+        
+        
+    }
+    {
+#if 1
+        int *p = (int *)malloc(4);
+        *p = 10;
+        free(p);
+
+        int *pp = new int;
+        *pp = 10;
+        delete pp;
+
+        char *c = new char[4];
+        *c = 10;
+        delete [] c;
+        
+        int *p0 = new int;
+        int *p1 = new int();
+        int *p2 = new int(5);
+        cout << *p0 << endl << *p1 << endl << *p2 << endl;
+        int *p3 = new int[3];
+        int *p4 = new int[3]();
+        int *p5 = new int[3]{};
+        int *p6 = new int[3]{ 5 };
+        cout << *p3 << endl << *p4 << endl << *p5 << endl << *p6 << endl;
+        
+#endif
+    }
     
     
-    Person p;
-    p.m_id = 10;
-    p.m_age = 20;
-    p.m_height = 30;
     
-    Person *pp = (Person *)&p.m_age;
-    pp->m_id = 40;
-    pp->m_age = 50;
     
-    p.display(); // CARE!!! this == p, is &p
-    pp->display(); // CARE!!! this == pp, is &p.m_age
+    
+    
     
     return 0;
 }
