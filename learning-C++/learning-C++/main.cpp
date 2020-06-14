@@ -57,7 +57,7 @@ public:
 int Student::m_age = 0;
 #endif
 
-
+#if 0
 class Car {
     static int ms_count;
     
@@ -74,6 +74,33 @@ public:
     }
 };
 int Car::ms_count = 0;
+#endif
+
+
+class Car {
+    static Car* ms_car;
+    Car() { }
+    ~Car() { }
+public:
+    static Car* shared() {
+        if (ms_car == nullptr) {
+            ms_car = new Car();
+        }
+        return ms_car;
+    }
+    static void destroy() {
+        if (ms_car != nullptr) {
+            delete ms_car;
+            ms_car = nullptr;
+        }
+    }
+    
+    
+    void run() {
+        cout << __PRETTY_FUNCTION__ << endl;
+    }
+};
+Car* Car::ms_car = nullptr;
 
 
 int main(int argc, const char * argv[]) {
@@ -92,8 +119,16 @@ int main(int argc, const char * argv[]) {
 //    cout << &Person::m_age << endl;
 //    cout << &Student::m_age << endl;
     
-    Car c;
-    cout << Car::getCount() << endl;
+//    Car c;
+//    cout << Car::getCount() << endl;
+    
+    
+//    Car car;
+    Car *p = Car::shared();
+    p->run();
+//    delete p;
+    Car *p1 = p->shared();
+    cout << p << endl << p1 << endl << Car::shared() << endl;
     
     
     return 0;
