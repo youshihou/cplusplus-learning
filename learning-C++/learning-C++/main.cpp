@@ -129,9 +129,8 @@ int main(int argc, const char * argv[]) {
         free(p3);
 #endif
     }
-    
     {
-#if 1
+#if 0
         Person p0; // call Person()
         Person p1(); // CARE!!! function declaration
         Person p2(11); // call Person(int)
@@ -146,8 +145,23 @@ int main(int argc, const char * argv[]) {
         
 #endif
     }
-
-    
+    {
+#if 1
+        Person p;
+        Person *p1 = new Person;
+        Person *p2 = new Person();
+        cout << g_p0.m_age << endl;
+        cout << p.m_age << endl;
+        cout << p1->m_age << endl;
+        cout << p2->m_age << endl;
+        Person *p3 = new Person[3];
+        cout << p3[0].m_age << endl;
+        Person *p4 = new Person[3]();
+        cout << p4[0].m_age << endl;
+        Person *p5 = new Person[3]{};
+        cout << p5[0].m_age << endl;
+#endif
+    }
     
     
     
