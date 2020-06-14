@@ -11,4 +11,16 @@
 
 #include <stdio.h>
 
+class Person {
+    int m_age;
+    
+public:
+    Person();
+    ~Person ();
+    
+    void setAge(int);
+    int getAge();
+};
+
+
 #endif /* Person_hpp */

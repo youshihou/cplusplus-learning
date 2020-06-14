@@ -7,25 +7,16 @@
 //
 
 #include <iostream>
+#include "Person.hpp"
 
 using namespace std;
-
-struct Person {
-    int m_age;
-    
-    Person () {
-        m_age = 0;
-        cout << __func__ << endl;
-    }
-    
-    ~Person () {
-        cout << __func__ << endl;
-    }
-};
 
 
 int main(int argc, const char * argv[]) {
     
+    Person p;
+    p.setAge(10);
+    p.getAge();
     
     return 0;
 }

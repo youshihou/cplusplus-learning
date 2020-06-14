@@ -11,6 +11,7 @@
 		035570C62494F3CA00183690 /* basic-grammar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570C52494F3CA00183690 /* basic-grammar.cpp */; };
 		035570C82495C02200183690 /* basic-constructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570C72495C02200183690 /* basic-constructor.cpp */; };
 		035570CA2495C84B00183690 /* basic-destructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570C92495C84B00183690 /* basic-destructor.cpp */; };
+		035570CD2495D91E00183690 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570CB2495D91E00183690 /* Person.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		035570C52494F3CA00183690 /* basic-grammar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-grammar.cpp"; sourceTree = "<group>"; };
 		035570C72495C02200183690 /* basic-constructor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-constructor.cpp"; sourceTree = "<group>"; };
 		035570C92495C84B00183690 /* basic-destructor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-destructor.cpp"; sourceTree = "<group>"; };
+		035570CB2495D91E00183690 /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
+		035570CC2495D91E00183690 /* Person.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Person.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				035570C52494F3CA00183690 /* basic-grammar.cpp */,
 				035570C72495C02200183690 /* basic-constructor.cpp */,
 				035570C92495C84B00183690 /* basic-destructor.cpp */,
+				035570CC2495D91E00183690 /* Person.hpp */,
+				035570CB2495D91E00183690 /* Person.cpp */,
 				035570B82493A8B500183690 /* main.cpp */,
 			);
 			path = "learning-C++";
@@ -131,6 +136,7 @@
 				035570C82495C02200183690 /* basic-constructor.cpp in Sources */,
 				035570C62494F3CA00183690 /* basic-grammar.cpp in Sources */,
 				035570B92493A8B500183690 /* main.cpp in Sources */,
+				035570CD2495D91E00183690 /* Person.cpp in Sources */,
 				035570CA2495C84B00183690 /* basic-destructor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
