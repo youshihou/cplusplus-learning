@@ -7,3 +7,27 @@
 //
 
 #include <stdio.h>
+
+struct Person {
+    int m_age;
+    
+    void run() {
+        
+    }
+};
+
+struct Student: Person {
+    int m_score;
+    
+    void study() {
+        
+    }
+};
+
+struct Worker: Person {
+    int m_salary;
+    
+    void work() {
+        
+    }
+};
