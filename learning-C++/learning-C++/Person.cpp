@@ -12,15 +12,6 @@
 using namespace std;
 
 namespace AK {
-    Person:: Person() {
-        m_age = 0;
-        cout << __func__ << endl;
-    }
-
-    Person:: ~Person() {
-        cout << __func__ << endl;
-    }
-
     void Person:: setAge(int age) {
         m_age = age;
         cout << __func__ << endl;
@@ -30,6 +21,20 @@ namespace AK {
         cout << __func__ << endl;
         return m_age;
     }
+
+    Person:: Person() {
+        m_age = 0;
+        cout << __func__ << endl;
+    }
+
+    Person:: ~Person() {
+        cout << __func__ << endl;
+    }
+
+    Person:: Person(int age, int height) :m_age(age), m_height(height) { // initialization list must be write here
+        
+    }
+
 }
 
 

@@ -16,13 +16,16 @@
 namespace AK {
     class Person {
         int m_age;
+        int m_height;
         
     public:
+        void setAge(int);
+        int getAge();
+        
         Person();
         ~Person ();
         
-        void setAge(int);
-        int getAge();
+        Person(int age = 17, int height = 180);  // defalut parameter must be write here
     };
 }
 

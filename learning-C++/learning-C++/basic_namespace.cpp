@@ -27,9 +27,9 @@ namespace AK {
 int basic_namespace() {
     using namespace AK;
     
-    Person p;
-    p.setAge(10);
-    p.getAge();
+//    Person p;
+//    p.setAge(10);
+//    p.getAge();
     
     AK::func();
     ::func(); // default global namespace ::
