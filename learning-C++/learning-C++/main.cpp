@@ -35,6 +35,7 @@ struct Undergraduate: Student, Worker {
 };
 #endif
 
+#if 0
 struct Student {
     int m_age;
     void eat() {
@@ -53,7 +54,22 @@ struct Undergraduate: Student, Worker {
         cout << __PRETTY_FUNCTION__ << endl;
     }
 };
+#endif
 
+
+
+struct Person {
+    int m_age;
+};
+struct Student: Person {
+    int m_score;
+};
+struct Worker: Person {
+    int m_salary;
+};
+struct Undergraduate: Student, Worker {
+    int m_grade;
+};
 
 
 int main(int argc, const char * argv[]) {
@@ -70,11 +86,12 @@ int main(int argc, const char * argv[]) {
 //    ug.Student::eat();
 //    ug.Worker::eat();
 //    ug.Undergraduate::eat();
-    ug.m_age = 10;
-    ug.Student::m_age = 11;
-    ug.Worker::m_age = 12;
-    ug.Undergraduate::m_age = 13;
-    cout << ug.m_age << endl;
+//    ug.m_age = 10;
+//    ug.Student::m_age = 11;
+//    ug.Worker::m_age = 12;
+//    ug.Undergraduate::m_age = 13;
+    
+    cout << sizeof(ug) << endl;
     
     
     return 0;
