@@ -6,7 +6,6 @@
 //  Copyright © 2020 Ankui. All rights reserved.
 //
 
-#include "Person.hpp"
 #include <iostream>
 using namespace std;
 
