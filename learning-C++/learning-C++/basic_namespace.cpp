@@ -1,5 +1,5 @@
 //
-//  basic_namaspace.cpp
+//  basic_namespace.cpp
 //  learning-C++
 //
 //  Created by Ankui on 6/14/20.
@@ -24,7 +24,7 @@ namespace AK {
 
 
 //int main(int argc, const char * argv[]) {
-int basic_namaspace() {
+int basic_namespace() {
     using namespace AK;
     
     Person p;
