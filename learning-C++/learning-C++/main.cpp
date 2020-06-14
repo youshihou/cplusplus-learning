@@ -10,36 +10,49 @@
 
 using namespace std;
 
+struct Car {
+    int m_price;
+    
+    Car () {
+        m_price = 0;
+        cout << __func__ << endl;
+    }
+    
+    ~Car () {
+        cout << __func__ << endl;
+    }
+};
+
 struct Person {
-//private: // struct default public
-    int m_id;
     int m_age;
-    int m_height;
-    
-    void run() {
-        cout << __func__ << ", age = " << m_age << endl;
-//        this->m_age; // this is a pointer
-//        this.m_age; // ERROR!!! . left must be object
-    }
-    
-    void display() {
-        cout << "id = " << m_id << ", age = " << m_age << ", height = " << m_height << endl;
-    }
-    
+    Car *m_car;
     
     Person () {
         m_age = 0;
+        m_car = new Car();
         cout << __func__ << endl;
     }
-    Person (int age) {
-        m_age = age;
-        cout << __func__ << ", age = " << m_age << endl;
+    
+    ~Person () {
+        delete m_car;
+        cout << __func__ << endl;
     }
 };
 
 
 int main(int argc, const char * argv[]) {
+    {
+#if 0
+        Person p; // call destructor
+        Person *p0 = new Person; // call destructor
+        delete p0;
+        Person *p1 = (Person *)malloc(sizeof(Person)); // not call destructor
+        free(p1);
+#endif
+        
+    }
     
+    Person p;
     
     
     return 0;

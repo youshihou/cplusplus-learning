@@ -158,12 +158,18 @@ int basic_constructor() {
         cout << p.m_age << endl;
         cout << p1->m_age << endl;
         cout << p2->m_age << endl;
+        
         Person *p3 = new Person[3];
         cout << p3[0].m_age << endl;
         Person *p4 = new Person[3]();
         cout << p4[0].m_age << endl;
         Person *p5 = new Person[3]{};
         cout << p5[0].m_age << endl;
+        delete p1;
+        delete p2;
+        delete [] p3;
+        delete [] p4;
+        delete [] p5;
 #endif
     }
     
