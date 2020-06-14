@@ -6,18 +6,17 @@
 //  Copyright © 2020 Ankui. All rights reserved.
 //
 
-#include <iostream>
 #include "Person.hpp"
-
+#include <iostream>
 using namespace std;
 
 
+
 int main(int argc, const char * argv[]) {
-    
-    Person p;
-    p.setAge(10);
-    p.getAge();
-    
+
+
+
+
     return 0;
 }
 
