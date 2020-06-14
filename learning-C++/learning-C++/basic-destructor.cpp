@@ -45,16 +45,11 @@ struct Person {
 
 //int main(int argc, const char * argv[]) {
 int basic_destructor() {
-    {
-#if 0
-        Person p; // call destructor
-        Person *p0 = new Person; // call destructor
-        delete p0;
-        Person *p1 = (Person *)malloc(sizeof(Person)); // not call destructor
-        free(p1);
-#endif
-        
-    }
+//    Person p; // call destructor
+//    Person *p0 = new Person; // call destructor
+//    delete p0;
+//    Person *p1 = (Person *)malloc(sizeof(Person)); // not call destructor
+//    free(p1);
     
 //    Person p;
     

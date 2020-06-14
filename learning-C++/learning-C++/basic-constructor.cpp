@@ -12,7 +12,6 @@
 using namespace std;
 
 #if 0
-
 class Person_ {
 //private: // class default private
     int m_age;

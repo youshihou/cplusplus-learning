@@ -11,7 +11,7 @@
 
 using namespace std;
 
-
+#if 0
 /*     1.function overload          */
 int sum(int a, int b) {
     return a + b;
@@ -88,6 +88,7 @@ int sum_(const int &v1, const int &v2) { // const parameter, reference function 
     return v1 + v2;
 }
 
+#endif
 
 
 //int main(int argc, const char * argv[]) {
@@ -317,3 +318,4 @@ int func2(int v1, int v2) {
 int func3(int v1, int v2) {
     return v1 + v2;
 }
+

@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 
+#if 0
 struct Person {
     int m_age;
     
@@ -31,3 +32,4 @@ struct Worker: Person {
         
     }
 };
+#endif

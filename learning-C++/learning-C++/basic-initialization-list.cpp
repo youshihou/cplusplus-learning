@@ -82,7 +82,7 @@ struct Student: Person {
 #endif
 
 
-
+#if 0
 struct Person {
     Person() {
         cout << __func__ << endl;
@@ -100,7 +100,7 @@ struct Student: Person {
         cout << __func__ << endl;
     }
 };
-
+#endif
 
 //int main(int argc, const char * argv[]) {
 int basic_initialization_list() {
@@ -118,7 +118,7 @@ int basic_initialization_list() {
 //    cout << stu.m_age << endl << stu.m_no << endl;
     
     
-    Student stu;
+//    Student stu;
     
 
     return 0;
