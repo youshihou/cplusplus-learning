@@ -56,8 +56,7 @@ struct Undergraduate: Student, Worker {
 };
 #endif
 
-
-
+#if 0
 struct Person {
     int m_age;
 };
@@ -70,6 +69,22 @@ struct Worker: Person {
 struct Undergraduate: Student, Worker {
     int m_grade;
 };
+#endif
+
+
+struct Person {
+    int m_age;
+};
+struct Student: virtual Person {
+    int m_score;
+};
+struct Worker: virtual Person {
+    int m_salary;
+};
+struct Undergraduate: Student, Worker {
+    int m_grade;
+};
+
 
 
 int main(int argc, const char * argv[]) {
@@ -91,8 +106,11 @@ int main(int argc, const char * argv[]) {
 //    ug.Worker::m_age = 12;
 //    ug.Undergraduate::m_age = 13;
     
-    cout << sizeof(ug) << endl;
-    
+//    ug.m_age = 10;
+    cout << sizeof(Person) << endl; // 4
+    cout << sizeof(Student) << endl; // 16
+    cout << sizeof(Worker) << endl; // 16
+    cout << sizeof(Undergraduate) << endl; // why 40?
     
     return 0;
 }
