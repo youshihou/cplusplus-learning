@@ -15,6 +15,7 @@
 		035570CF2495E13000183690 /* basic_namespace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570CE2495E13000183690 /* basic_namespace.cpp */; };
 		035570D12495ECB700183690 /* basic-inherit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570D02495ECB700183690 /* basic-inherit.cpp */; };
 		035570D32496003700183690 /* basic-initialization-list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570D22496003700183690 /* basic-initialization-list.cpp */; };
+		035570D5249624B700183690 /* basic-polymorphism.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570D4249624B700183690 /* basic-polymorphism.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,7 @@
 		035570CE2495E13000183690 /* basic_namespace.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = basic_namespace.cpp; sourceTree = "<group>"; };
 		035570D02495ECB700183690 /* basic-inherit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-inherit.cpp"; sourceTree = "<group>"; };
 		035570D22496003700183690 /* basic-initialization-list.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-initialization-list.cpp"; sourceTree = "<group>"; };
+		035570D4249624B700183690 /* basic-polymorphism.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-polymorphism.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				035570CE2495E13000183690 /* basic_namespace.cpp */,
 				035570D02495ECB700183690 /* basic-inherit.cpp */,
 				035570D22496003700183690 /* basic-initialization-list.cpp */,
+				035570D4249624B700183690 /* basic-polymorphism.cpp */,
 				035570CC2495D91E00183690 /* Person.hpp */,
 				035570CB2495D91E00183690 /* Person.cpp */,
 				035570B82493A8B500183690 /* main.cpp */,
@@ -147,6 +150,7 @@
 				035570B92493A8B500183690 /* main.cpp in Sources */,
 				035570CD2495D91E00183690 /* Person.cpp in Sources */,
 				035570CF2495E13000183690 /* basic_namespace.cpp in Sources */,
+				035570D5249624B700183690 /* basic-polymorphism.cpp in Sources */,
 				035570CA2495C84B00183690 /* basic-destructor.cpp in Sources */,
 				035570D32496003700183690 /* basic-initialization-list.cpp in Sources */,
 				035570D12495ECB700183690 /* basic-inherit.cpp in Sources */,
