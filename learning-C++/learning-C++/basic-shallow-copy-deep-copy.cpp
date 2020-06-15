@@ -58,7 +58,8 @@ public:
 // if member variable has pointer type, maybe need deep copy
 
 
-int main(int argc, const char * argv[]) {
+//int main(int argc, const char * argv[]) {
+int basic_shallow_copy_deep_copy() {
 //    const char *name = "BMW";
 //    Car car(100, name);
 //    car.display();
