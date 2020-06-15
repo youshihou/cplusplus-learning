@@ -20,6 +20,7 @@
 		035570D92496554500183690 /* basic-static-singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570D82496554500183690 /* basic-static-singleton.cpp */; };
 		035D13D12497A81E007ED0E3 /* basic-const.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035D13D02497A81E007ED0E3 /* basic-const.cpp */; };
 		035D13D32497B6A7007ED0E3 /* basic-copy-constructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035D13D22497B6A7007ED0E3 /* basic-copy-constructor.cpp */; };
+		035D13D52497C5F1007ED0E3 /* basic-shallow-copy-deep-copy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035D13D42497C5F1007ED0E3 /* basic-shallow-copy-deep-copy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,7 @@
 		035570D82496554500183690 /* basic-static-singleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-static-singleton.cpp"; sourceTree = "<group>"; };
 		035D13D02497A81E007ED0E3 /* basic-const.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-const.cpp"; sourceTree = "<group>"; };
 		035D13D22497B6A7007ED0E3 /* basic-copy-constructor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-copy-constructor.cpp"; sourceTree = "<group>"; };
+		035D13D42497C5F1007ED0E3 /* basic-shallow-copy-deep-copy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-shallow-copy-deep-copy.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				035570D82496554500183690 /* basic-static-singleton.cpp */,
 				035D13D02497A81E007ED0E3 /* basic-const.cpp */,
 				035D13D22497B6A7007ED0E3 /* basic-copy-constructor.cpp */,
+				035D13D42497C5F1007ED0E3 /* basic-shallow-copy-deep-copy.cpp */,
 				035570CC2495D91E00183690 /* Person.hpp */,
 				035570CB2495D91E00183690 /* Person.cpp */,
 				035570B82493A8B500183690 /* main.cpp */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035D13D52497C5F1007ED0E3 /* basic-shallow-copy-deep-copy.cpp in Sources */,
 				035570C82495C02200183690 /* basic-constructor.cpp in Sources */,
 				035570C62494F3CA00183690 /* basic-grammar.cpp in Sources */,
 				035570B92493A8B500183690 /* main.cpp in Sources */,
