@@ -19,6 +19,7 @@
 		035570D724963F7D00183690 /* basic-multiple-inherit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570D624963F7D00183690 /* basic-multiple-inherit.cpp */; };
 		035570D92496554500183690 /* basic-static-singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570D82496554500183690 /* basic-static-singleton.cpp */; };
 		035D13D12497A81E007ED0E3 /* basic-const.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035D13D02497A81E007ED0E3 /* basic-const.cpp */; };
+		035D13D32497B6A7007ED0E3 /* basic-copy-constructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035D13D22497B6A7007ED0E3 /* basic-copy-constructor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +49,7 @@
 		035570D624963F7D00183690 /* basic-multiple-inherit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-multiple-inherit.cpp"; sourceTree = "<group>"; };
 		035570D82496554500183690 /* basic-static-singleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-static-singleton.cpp"; sourceTree = "<group>"; };
 		035D13D02497A81E007ED0E3 /* basic-const.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-const.cpp"; sourceTree = "<group>"; };
+		035D13D22497B6A7007ED0E3 /* basic-copy-constructor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-copy-constructor.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				035570D624963F7D00183690 /* basic-multiple-inherit.cpp */,
 				035570D82496554500183690 /* basic-static-singleton.cpp */,
 				035D13D02497A81E007ED0E3 /* basic-const.cpp */,
+				035D13D22497B6A7007ED0E3 /* basic-copy-constructor.cpp */,
 				035570CC2495D91E00183690 /* Person.hpp */,
 				035570CB2495D91E00183690 /* Person.cpp */,
 				035570B82493A8B500183690 /* main.cpp */,
@@ -159,6 +162,7 @@
 				035570B92493A8B500183690 /* main.cpp in Sources */,
 				035570CD2495D91E00183690 /* Person.cpp in Sources */,
 				035570D92496554500183690 /* basic-static-singleton.cpp in Sources */,
+				035D13D32497B6A7007ED0E3 /* basic-copy-constructor.cpp in Sources */,
 				035570CF2495E13000183690 /* basic_namespace.cpp in Sources */,
 				035D13D12497A81E007ED0E3 /* basic-const.cpp in Sources */,
 				035570D5249624B700183690 /* basic-polymorphism.cpp in Sources */,
