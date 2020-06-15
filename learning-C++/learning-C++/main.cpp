@@ -9,7 +9,7 @@
 #include <iostream>
 using namespace std;
 
-#if 0
+#if 1
 class Car {
     int m_price;
     int m_length;
@@ -27,12 +27,13 @@ public:
     }
     
     void display() {
-        cout << m_price << endl << m_length << endl;
+        cout << m_price << ", " << m_length << endl;
     }
 };
 #endif
 
 
+#if 0
 class Person {
     int m_age;
 public:
@@ -48,22 +49,29 @@ class Student: public Person {
 public:
     Student(int age = 0, int score = 0) :Person(age), m_score(score) {}
     Student(const Student &student) :Person(student), m_score(student.m_score) {}
+    // subclass constructor will call parent class non-parameter constructor
+    
     
     void diaplay() {
         Person::diaplay();
         cout << m_score << endl;
     }
 };
-
+#endif
 
 int main(int argc, const char * argv[]) {
-//    Car car(100, 5);
-//    Car car1(car);
-//    car1.display();
+    Car car1(100, 5); // call constructor
+    Car car2(car1); // call copy constructor
+    Car car3 = car2; // call copy constructor
+    Car car4; // call constructor
+    car4.display();
+    car4 = car3; // assignment, because car3 and car4 already exists.
+    // not create a new object, constructor called only when creating a new object.
+    car4.display();
     
-    Student stu1(18, 100);
-    Student stu2(stu1);
-    stu2.diaplay();
+//    Student stu1(18, 100);
+//    Student stu2(stu1);
+//    stu2.diaplay();
     
     return 0;
 }
