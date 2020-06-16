@@ -25,6 +25,7 @@
 		03A7643A2498EA280032858F /* basic-implicit-explicit-constructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A764392498EA280032858F /* basic-implicit-explicit-constructor.cpp */; };
 		03A7643C2498F4210032858F /* basic-automatic-generate-constructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A7643B2498F4210032858F /* basic-automatic-generate-constructor.cpp */; };
 		03A7643E2499049C0032858F /* basic-friend-inner-local-class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A7643D2499049C0032858F /* basic-friend-inner-local-class.cpp */; };
+		03A76440249909F60032858F /* basic-operator-overload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A7643F249909F60032858F /* basic-operator-overload.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,7 @@
 		03A764392498EA280032858F /* basic-implicit-explicit-constructor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-implicit-explicit-constructor.cpp"; sourceTree = "<group>"; };
 		03A7643B2498F4210032858F /* basic-automatic-generate-constructor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-automatic-generate-constructor.cpp"; sourceTree = "<group>"; };
 		03A7643D2499049C0032858F /* basic-friend-inner-local-class.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-friend-inner-local-class.cpp"; sourceTree = "<group>"; };
+		03A7643F249909F60032858F /* basic-operator-overload.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-operator-overload.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				03A764392498EA280032858F /* basic-implicit-explicit-constructor.cpp */,
 				03A7643B2498F4210032858F /* basic-automatic-generate-constructor.cpp */,
 				03A7643D2499049C0032858F /* basic-friend-inner-local-class.cpp */,
+				03A7643F249909F60032858F /* basic-operator-overload.cpp */,
 				035570CC2495D91E00183690 /* Person.hpp */,
 				035570CB2495D91E00183690 /* Person.cpp */,
 				035570B82493A8B500183690 /* main.cpp */,
@@ -175,6 +178,7 @@
 				035D13D52497C5F1007ED0E3 /* basic-shallow-copy-deep-copy.cpp in Sources */,
 				035570C82495C02200183690 /* basic-constructor.cpp in Sources */,
 				03A7643C2498F4210032858F /* basic-automatic-generate-constructor.cpp in Sources */,
+				03A76440249909F60032858F /* basic-operator-overload.cpp in Sources */,
 				035570C62494F3CA00183690 /* basic-grammar.cpp in Sources */,
 				035570B92493A8B500183690 /* main.cpp in Sources */,
 				03A7643A2498EA280032858F /* basic-implicit-explicit-constructor.cpp in Sources */,
