@@ -21,6 +21,7 @@
 		035D13D12497A81E007ED0E3 /* basic-const.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035D13D02497A81E007ED0E3 /* basic-const.cpp */; };
 		035D13D32497B6A7007ED0E3 /* basic-copy-constructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035D13D22497B6A7007ED0E3 /* basic-copy-constructor.cpp */; };
 		035D13D52497C5F1007ED0E3 /* basic-shallow-copy-deep-copy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035D13D42497C5F1007ED0E3 /* basic-shallow-copy-deep-copy.cpp */; };
+		03A764382498E2180032858F /* basic-anonymous-object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A764372498E2180032858F /* basic-anonymous-object.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,7 @@
 		035D13D02497A81E007ED0E3 /* basic-const.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-const.cpp"; sourceTree = "<group>"; };
 		035D13D22497B6A7007ED0E3 /* basic-copy-constructor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-copy-constructor.cpp"; sourceTree = "<group>"; };
 		035D13D42497C5F1007ED0E3 /* basic-shallow-copy-deep-copy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-shallow-copy-deep-copy.cpp"; sourceTree = "<group>"; };
+		03A764372498E2180032858F /* basic-anonymous-object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-anonymous-object.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				035D13D02497A81E007ED0E3 /* basic-const.cpp */,
 				035D13D22497B6A7007ED0E3 /* basic-copy-constructor.cpp */,
 				035D13D42497C5F1007ED0E3 /* basic-shallow-copy-deep-copy.cpp */,
+				03A764372498E2180032858F /* basic-anonymous-object.cpp */,
 				035570CC2495D91E00183690 /* Person.hpp */,
 				035570CB2495D91E00183690 /* Person.cpp */,
 				035570B82493A8B500183690 /* main.cpp */,
@@ -168,6 +171,7 @@
 				035570D92496554500183690 /* basic-static-singleton.cpp in Sources */,
 				035D13D32497B6A7007ED0E3 /* basic-copy-constructor.cpp in Sources */,
 				035570CF2495E13000183690 /* basic_namespace.cpp in Sources */,
+				03A764382498E2180032858F /* basic-anonymous-object.cpp in Sources */,
 				035D13D12497A81E007ED0E3 /* basic-const.cpp in Sources */,
 				035570D5249624B700183690 /* basic-polymorphism.cpp in Sources */,
 				035570CA2495C84B00183690 /* basic-destructor.cpp in Sources */,
