@@ -53,7 +53,7 @@ int basic_implicit_explicit_constructor() {
 //    Person p2(10);
 //    Person p3 = p2;
     
-//    Person p4 = 20; // call Person(int age), equuivalent to Person p4(20);
+//    Person p4 = 20; // call Person(int age), equivalent to Person p4(20);
     
 //    func(30); // call Person(int age)
     
