@@ -9,6 +9,7 @@
 #include <iostream>
 using namespace std;
 
+#if 0
 class Point {
 //    friend Point add(Point, Point);
 //    friend Point operator+(Point, Point);
@@ -96,7 +97,29 @@ public:
         cout << m_age << ", " << m_height << endl;
     }
 };
+#endif
 
+
+
+
+class Person {
+public:
+    int m_age;
+    Person & operator=(const Person &person) {
+        m_age = person.m_age;
+        return *this;
+    }
+};
+class Student: public Person {
+public:
+    int m_score;
+    Student & operator=(const Student &student) {
+        Person::operator=(student); // CARE!!! call parent class operator=(const Person &);
+        m_score = student.m_score;
+        return *this;
+    }
+    
+};
 
 
 
@@ -110,15 +133,7 @@ int main(int argc, const char * argv[]) {
 //    cout << p1; // equivalent to operator<<(cout, p1);
 //    cout << p1 << endl << p2 << endl;
 //    (cout << 1) = cout; // ERROR!!!
-    
-    
-    Person p1(18, 180);
-    Person p2(16, 160);
-    p1 = p2;
-    p1.display();
-    (p1 = p2) = Person(17, 170);
-    p1.display();
-    
+
 //    Point p3(30, 40);
 //    Point p = add(p1, p2);
 //    p.display();
@@ -162,6 +177,27 @@ int main(int argc, const char * argv[]) {
     
 //    (++a) = 20; // allowed
 //    (a++) = 30; // ERROR!!! not allowed
+    
+    
+//    Person p1(18, 180);
+//    Person p2(16, 160);
+//    p1 = p2;
+//    p1.display();
+//    (p1 = p2) = Person(17, 170);
+//    p1.display();
+
+    
+    
+    
+    Student stu1;
+    stu1.m_age = 10;
+    stu1.m_score = 20;
+    Student stu2;
+    stu2 = stu1;
+    cout << stu2.m_age << ", " << stu2.m_score << endl;
+    
+    
+    
     
     getchar();
     getchar();
