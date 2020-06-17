@@ -100,8 +100,7 @@ public:
 #endif
 
 
-
-
+#if 0
 class Person {
 public:
     int m_age;
@@ -119,6 +118,21 @@ public:
         return *this;
     }
     
+};
+#endif
+
+
+
+int sum_(int a, int b) {
+    return a + b;
+}
+
+class Sum {
+    int m_age;
+public:
+    int operator()(int a, int b) {
+        return a + b;
+    }
 };
 
 
@@ -188,18 +202,25 @@ int main(int argc, const char * argv[]) {
 
     
     
-    
-    Student stu1;
-    stu1.m_age = 10;
-    stu1.m_score = 20;
-    Student stu2;
-    stu2 = stu1;
-    cout << stu2.m_age << ", " << stu2.m_score << endl;
-    
+//    Student stu1;
+//    stu1.m_age = 10;
+//    stu1.m_score = 20;
+//    Student stu2;
+//    stu2 = stu1;
+//    cout << stu2.m_age << ", " << stu2.m_score << endl;
     
     
+    // call global function
+    cout << sum_(10, 10) << endl;
+    Sum sum;
+    // call member function
+    cout << sum(10, 20) << endl; // equivalent to sum.operator()(10, 20);
     
-    getchar();
-    getchar();
+    
+    
+    
+    
+//    getchar();
+//    getchar();
     return 0;
 }
