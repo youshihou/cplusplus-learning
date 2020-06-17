@@ -82,8 +82,10 @@ int Car::ms_count = 0;
 /*           singleton          */
 class Car {
     static Car* ms_car;
-    Car() { }
-    ~Car() { }
+    Car() {}
+    Car(const Car &car) {}
+    ~Car() {}
+    void operator=(const Car &car) {} // private, will not allowed assignment
 public:
     static Car* shared() {
         if (ms_car == nullptr) {
@@ -130,10 +132,11 @@ int basic_static_singleton() {
 //    Car car;
 //    Car *p = Car::shared();
 //    p->run();
-////    delete p;
+//    delete p;
 //    Car *p1 = p->shared();
 //    cout << p << endl << p1 << endl << Car::shared() << endl;
-    
+//    *p = *p1 // not allowed
+//    Car *p2 = new Car(*p); // not allowed call copy constructor
     
     return 0;
 }
