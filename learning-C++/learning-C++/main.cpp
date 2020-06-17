@@ -13,6 +13,9 @@ class Point {
 //    friend Point add(Point, Point);
 //    friend Point operator+(Point, Point);
 //    friend Point operator+(const Point &, const Point &);
+    friend ostream & operator<<(ostream &, const Point &);
+    friend istream & operator>>(istream &, Point &);
+    
     int m_x;
     int m_y;
 public:
@@ -65,9 +68,57 @@ public:
 //}
 
 
+ostream & operator<<(ostream &cout, const Point &point) {
+    cout << "(" << point.m_x << ", " << point.m_y << ")";
+    return cout;
+}
+
+istream & operator>>(istream &cin, Point &point) { // CARE!!! Point &point in here
+    cin >> point.m_x;
+    cin >> point.m_y;
+    return cin;
+}
+
+
+
+
+
+class Person {
+    int m_age;
+    int m_height;
+public:
+    Person(int age = 0, int height = 0) :m_age(age), m_height(height) {}
+    Person & operator=(const Person & person) {
+        m_age = person.m_age;
+        return *this;
+    }
+    void display() {
+        cout << m_age << ", " << m_height << endl;
+    }
+};
+
+
+
+
+
 int main(int argc, const char * argv[]) {
-    Point p1(10, 20);
-    Point p2(10, 30);
+//    Point p1(10, 20);
+//    Point p2(10, 30);
+//    cin >> p1 >> p2;
+//    cout << p1 << endl << p2 << endl;
+    
+//    cout << p1; // equivalent to operator<<(cout, p1);
+//    cout << p1 << endl << p2 << endl;
+//    (cout << 1) = cout; // ERROR!!!
+    
+    
+    Person p1(18, 180);
+    Person p2(16, 160);
+    p1 = p2;
+    p1.display();
+    (p1 = p2) = Person(17, 170);
+    p1.display();
+    
 //    Point p3(30, 40);
 //    Point p = add(p1, p2);
 //    p.display();
@@ -90,9 +141,9 @@ int main(int argc, const char * argv[]) {
 //    Point p3 = ++p1 + Point(2, 2);
 //    p1.display();
 //    p3.display();
-    Point p3 = p1++ + Point(2, 2);
-    p1.display();
-    p3.display();
+//    Point p3 = p1++ + Point(2, 2);
+//    p1.display();
+//    p3.display();
 //    p1++ = Point(1, 1); // ERROR!!!
  
 //    Point p3 = p1 + p2; // equivalent to Point p3 = operator+(p1, p2);
@@ -103,15 +154,16 @@ int main(int argc, const char * argv[]) {
 //    Point p5 = p1 - p2;
 //    p5.display();
     
-    int a = 10;
-    int b = 20;
+//    int a = 10;
+//    int b = 20;
 //    (a + b) = 30; // ERROR!!! not allowed
-    (a += b) = 30; // allowed
+//    (a += b) = 30; // allowed
 //    (p1 + p2) = Point(1, 2);
     
 //    (++a) = 20; // allowed
 //    (a++) = 30; // ERROR!!! not allowed
     
-//    getchar();
+    getchar();
+    getchar();
     return 0;
 }
