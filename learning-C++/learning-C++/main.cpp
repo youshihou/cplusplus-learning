@@ -32,7 +32,26 @@ public:
         m_y += point.m_y;
         return *this; // CARE!!! is *this not this
     }
-
+    bool operator==(const Point &point) const {
+        return m_x == point.m_x && m_y == point.m_y;
+    }
+    bool operator!=(const Point &point) const {
+        return m_x != point.m_x || m_y != point.m_y;
+    }
+    const Point operator-() const {
+        return Point(-m_x, -m_y);
+    }
+    Point & operator++() { // pre ++
+        m_x++;
+        m_y++;
+        return *this;
+    }
+    const Point operator++(int) { // last ++
+        Point p(m_x, m_y);
+        m_x++;
+        m_y++;
+        return p;
+    }
 };
 
 //Point add(Point p1, Point p2) {
@@ -48,16 +67,34 @@ public:
 
 int main(int argc, const char * argv[]) {
     Point p1(10, 20);
-    Point p2(20, 30);
+    Point p2(10, 30);
 //    Point p3(30, 40);
 //    Point p = add(p1, p2);
 //    p.display();
 //    Point p = p1 + p2 + p3; // p1.operator+(p2).operator+(p3);
-    p1 += p2; // p1.operator+=(p2);
-    p1.display();
-    (p1 += p2) = Point(30, 40);
+//    p1 += p2; // p1.operator+=(p2);
+//    p1.display();
+//    (p1 += p2) = Point(30, 40); // equivalent to p1.operator+=(p2);
+//    p1.display();
     
-        
+//    cout << (p1 != p2) << endl;
+    
+//    Point p3 = -p1;
+//    p3.display();
+//    p1.display();
+//    (-p1) = Point(10, 10); // ERROR!!!
+//    -(-p1); // p1.operator-().operator-();
+//    p1.display();
+//    ++p1 = Point(1, 1);
+//    p1.display();
+//    Point p3 = ++p1 + Point(2, 2);
+//    p1.display();
+//    p3.display();
+    Point p3 = p1++ + Point(2, 2);
+    p1.display();
+    p3.display();
+//    p1++ = Point(1, 1); // ERROR!!!
+ 
 //    Point p3 = p1 + p2; // equivalent to Point p3 = operator+(p1, p2);
 //    p3.display();
     
@@ -72,6 +109,9 @@ int main(int argc, const char * argv[]) {
     (a += b) = 30; // allowed
 //    (p1 + p2) = Point(1, 2);
     
-    getchar();
+//    (++a) = 20; // allowed
+//    (a++) = 30; // ERROR!!! not allowed
+    
+//    getchar();
     return 0;
 }
