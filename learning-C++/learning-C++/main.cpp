@@ -122,7 +122,7 @@ public:
 #endif
 
 
-
+#if 0
 int sum_(int a, int b) {
     return a + b;
 }
@@ -134,7 +134,7 @@ public:
         return a + b;
     }
 };
-
+#endif
 
 
 
@@ -210,11 +210,11 @@ int main(int argc, const char * argv[]) {
 //    cout << stu2.m_age << ", " << stu2.m_score << endl;
     
     
-    // call global function
-    cout << sum_(10, 10) << endl;
-    Sum sum;
-    // call member function
-    cout << sum(10, 20) << endl; // equivalent to sum.operator()(10, 20);
+//    // call global function
+//    cout << sum_(10, 10) << endl;
+//    Sum sum;
+//    // call member function
+//    cout << sum(10, 20) << endl; // equivalent to sum.operator()(10, 20);
     
     
     
