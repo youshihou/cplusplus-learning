@@ -62,6 +62,7 @@
 		03A7643B2498F4210032858F /* basic-automatic-generate-constructor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-automatic-generate-constructor.cpp"; sourceTree = "<group>"; };
 		03A7643D2499049C0032858F /* basic-friend-inner-local-class.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-friend-inner-local-class.cpp"; sourceTree = "<group>"; };
 		03A7643F249909F60032858F /* basic-operator-overload.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-operator-overload.cpp"; sourceTree = "<group>"; };
+		03CB48F0249BAFB80097E8A1 /* array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +112,7 @@
 				03A7643B2498F4210032858F /* basic-automatic-generate-constructor.cpp */,
 				03A7643D2499049C0032858F /* basic-friend-inner-local-class.cpp */,
 				03A7643F249909F60032858F /* basic-operator-overload.cpp */,
+				03CB48F0249BAFB80097E8A1 /* array.hpp */,
 				035570CC2495D91E00183690 /* Person.hpp */,
 				035570CB2495D91E00183690 /* Person.cpp */,
 				035570B82493A8B500183690 /* main.cpp */,
