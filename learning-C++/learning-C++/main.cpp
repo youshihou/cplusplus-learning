@@ -148,21 +148,33 @@ int main(int argc, const char * argv[]) {
 //    add<Point>(Point(1, 1), Point(2, 2));
     
     
-//    Array<int> array;
-//    for (int i = 1; i <= 11; i++) {
-//        array.add(i * 10);
-//    }
-//    cout << array << endl;
+    Array<int> array;
+    for (int i = 1; i < 11; i++) {
+        array.add(i * 10);
+    }
+    cout << array << endl;
+    array.remove(0);
+    cout << array << endl;
+    array.remove(3);
+    cout << array << endl;
+    array.remove(array.size() - 1);
+    cout << array << endl;
+    array.insert(array.size(), 12);
+    cout << array << endl;
+    array.insert(0, 11);
+    cout << array << endl;
+    array.insert(3, 120);
+    cout << array << endl;
 
 //    cout << "size = " << array.size() << endl;
 //    cout << array.get(0) << endl;
 //    cout << array[0] << endl;
 //    cout << array[11] << endl;
     
-    Array<Point> array;
-    array.add(Point(1, 2));
-    array.add(Point(3, 4));
-    cout << array << endl;
+//    Array<Point> array;
+//    array.add(Point(1, 2));
+//    array.add(Point(3, 4));
+//    cout << array << endl;
     
     return 0;
 }

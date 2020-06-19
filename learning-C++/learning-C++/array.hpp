@@ -27,6 +27,7 @@ public:
     int size();
     void add(Element value);
     void remove(int index);
+    void insert(int index, Element value);
     Element operator[](int index);
     
     template <class Type>
@@ -82,9 +83,25 @@ void Array<Element>::add(Element value) {
 template <class Element>
 void Array<Element>::remove(int index) {
     check_index(index);
-    
-    
+    for (int i = index + 1; i <= m_size - 1; i++) {
+        m_data[i - 1] = m_data[i];
+    }
+    m_size--;
 }
+
+template <class Element>
+void Array<Element>::insert(int index, Element value) {
+    if (index < 0 || index > m_size) { // CARE!!!
+        throw "index error!";
+    }
+
+    for (int i = m_size - 1; i >= index; i--) { // CARE!!! i >= index
+        m_data[i + 1] = m_data[i];
+    }
+    m_data[index] = value;
+    m_size++;
+}
+
 
 template <class Element>
 Element Array<Element>::operator[](int index) {
