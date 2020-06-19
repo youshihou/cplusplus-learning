@@ -27,6 +27,7 @@
 		03A7643E2499049C0032858F /* basic-friend-inner-local-class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A7643D2499049C0032858F /* basic-friend-inner-local-class.cpp */; };
 		03A76440249909F60032858F /* basic-operator-overload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A7643F249909F60032858F /* basic-operator-overload.cpp */; };
 		03AD5A81249CF24200894280 /* basic-template.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03AD5A80249CF24200894280 /* basic-template.cpp */; };
+		03AD5A83249D0C3200894280 /* basic-cast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03AD5A82249D0C3200894280 /* basic-cast.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +65,7 @@
 		03A7643D2499049C0032858F /* basic-friend-inner-local-class.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-friend-inner-local-class.cpp"; sourceTree = "<group>"; };
 		03A7643F249909F60032858F /* basic-operator-overload.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-operator-overload.cpp"; sourceTree = "<group>"; };
 		03AD5A80249CF24200894280 /* basic-template.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-template.cpp"; sourceTree = "<group>"; };
+		03AD5A82249D0C3200894280 /* basic-cast.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-cast.cpp"; sourceTree = "<group>"; };
 		03CB48F0249BAFB80097E8A1 /* array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				03A7643D2499049C0032858F /* basic-friend-inner-local-class.cpp */,
 				03A7643F249909F60032858F /* basic-operator-overload.cpp */,
 				03AD5A80249CF24200894280 /* basic-template.cpp */,
+				03AD5A82249D0C3200894280 /* basic-cast.cpp */,
 				03CB48F0249BAFB80097E8A1 /* array.hpp */,
 				035570CC2495D91E00183690 /* Person.hpp */,
 				035570CB2495D91E00183690 /* Person.cpp */,
@@ -189,6 +192,7 @@
 				03A7643A2498EA280032858F /* basic-implicit-explicit-constructor.cpp in Sources */,
 				03A7643E2499049C0032858F /* basic-friend-inner-local-class.cpp in Sources */,
 				035570CD2495D91E00183690 /* Person.cpp in Sources */,
+				03AD5A83249D0C3200894280 /* basic-cast.cpp in Sources */,
 				035570D92496554500183690 /* basic-static-singleton.cpp in Sources */,
 				035D13D32497B6A7007ED0E3 /* basic-copy-constructor.cpp in Sources */,
 				035570CF2495E13000183690 /* basic_namespace.cpp in Sources */,
