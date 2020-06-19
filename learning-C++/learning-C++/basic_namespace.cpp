@@ -11,6 +11,7 @@
 #include <iostream>
 using namespace std;
 
+#if 0
 void func() {
     cout << "::" << __func__ << endl;
 }
@@ -20,7 +21,7 @@ namespace AK {
         cout << "AK::" << __func__ << endl;
     }
 }
-
+#endif
 
 
 //int main(int argc, const char * argv[]) {
@@ -31,9 +32,9 @@ int basic_namespace() {
 //    p.setAge(10);
 //    p.getAge();
     
-    AK::func();
-    ::func(); // default global namespace ::
-    ::AK::func();
+//    AK::func();
+//    ::func(); // default global namespace ::
+//    ::AK::func();
     
     return 0;
 }
