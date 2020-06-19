@@ -22,7 +22,7 @@ public:
     }
 };
 ostream & operator<<(ostream &cout, const Point & point) {
-    return cout << "(" << point.m_x << ", " << point.m_y << ")" << endl;
+    return cout << "(" << point.m_x << ", " << point.m_y << ")";
 //    return cout;
 }
 Point add(Point a, Point b) {
@@ -117,9 +117,9 @@ public:
     }
     void add(Element value) {
         if (m_size == m_capacity) {
-            int *old_data = m_data;
+            Element *old_data = m_data;
             size_t new_size = m_capacity << 1;
-            int *new_data = new Element[new_size]();
+            Element *new_data = new Element[new_size]();
             memcpy(new_data, old_data, new_size);
             m_data = new_data;
             delete [] old_data;
@@ -148,10 +148,10 @@ int main(int argc, const char * argv[]) {
 //    add<Point>(Point(1, 1), Point(2, 2));
     
     
-    Array<int> array;
-    for (int i = 1; i <= 11; i++) {
-        array.add(i * 10);
-    }
+//    Array<int> array;
+//    for (int i = 1; i <= 11; i++) {
+//        array.add(i * 10);
+//    }
 //    cout << array << endl;
 
 //    cout << "size = " << array.size() << endl;
@@ -159,10 +159,10 @@ int main(int argc, const char * argv[]) {
 //    cout << array[0] << endl;
 //    cout << array[11] << endl;
     
-//    Array<Point> array;
-//    array.add(Point(1, 2));
-//    array.add(Point(3, 4));
-//    cout << array << endl;
+    Array<Point> array;
+    array.add(Point(1, 2));
+    array.add(Point(3, 4));
+    cout << array << endl;
     
     return 0;
 }

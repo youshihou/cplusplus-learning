@@ -28,7 +28,9 @@ public:
     void add(Element value);
     void remove(int index);
     Element operator[](int index);
-    friend ostream & operator<<(ostream &, const Array<Element> &);
+    
+    template <class Type>
+    friend ostream & operator<<(ostream &, const Array<Type> &); // CAER!!!!!! here template <class Type> and const Array<Type> &
 };
 
 template <class Element>
@@ -89,7 +91,6 @@ Element Array<Element>::operator[](int index) {
     return get(index);
 }
 
-
 template <class Element>
 ostream & operator<<(ostream &cout, const Array<Element> &array) {
     cout << "[";
@@ -98,6 +99,7 @@ ostream & operator<<(ostream &cout, const Array<Element> &array) {
             cout << ", ";
         }
         cout << array.m_data[i];
+        
 //        if (i != array.m_size - 1) {
 //            cout << ", ";
 //        }
