@@ -1,5 +1,5 @@
 //
-//  basic-c++11-newfeatures.cpp
+//  basic-cplusplus-newfeatures.cpp
 //  learning-C++
 //
 //  Created by Ankui on 6/20/20.
@@ -53,7 +53,8 @@ int task(int v1, int v2, int(*func)(int, int)) {
 
 
 //int main(int argc, const char * argv[]) {
-int basic_cpulsplus11_newfeatures() {
+int basic_cpulsplus_newfeatures() {
+    // c++11
 //    auto a = 10; // int
 //    auto str = "cplusplus"; // const char *
 //    auto p = new person(); // person *
@@ -151,6 +152,41 @@ int basic_cpulsplus11_newfeatures() {
     cout << a << endl;
     
     
+        // c++14
+    //    auto func = [] (auto a, auto b) {
+    //        return a + b;
+    //    };
+    //    cout << func(10, 10.5) << endl;
+    //
+    //
+    //    int a;
+    //    auto func_ = [a = 10] {
+    //        cout << a << endl;
+    //    };
+    //    func_();
+    //    cout << a << endl;
+
+        // c++17
+    //    if (int a = 10; a > 10) {
+    //        a = 1;
+    //    } else if (int b = 20; a > 5 && b > 10) {
+    //        b = 2;
+    //        a = 2;
+    //    } else if (0) {
+    //        b = 3;
+    //        a = 3;
+    //    } else {
+    //        b = 4;
+    //        a = 4;
+    //    }
+    //
+    //    switch (int a = 10; a) {
+    //        case 1:
+    //            break;
+    //
+    //        default:
+    //            break;
+    //    }
     
     
     
