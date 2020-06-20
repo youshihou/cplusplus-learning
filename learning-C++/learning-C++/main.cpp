@@ -49,6 +49,39 @@ public:
 #endif
 
 
+class person;
+
+class car {
+public:
+//    person *m_person;
+//    shared_ptr<person> m_person = nullptr;
+    weak_ptr<person> m_person;
+
+    car() {
+        cout << __PRETTY_FUNCTION__ << endl;
+    }
+    ~car() {
+        cout << __PRETTY_FUNCTION__ << endl;
+    }
+};
+
+class person {
+public:
+//    car *m_car;
+    shared_ptr<car> m_car = nullptr;
+  
+    person() {
+        cout << __PRETTY_FUNCTION__ << endl;
+    }
+    ~person() {
+        cout << __PRETTY_FUNCTION__ << endl;
+    }
+};
+
+
+
+
+
 
 
 int main(int argc, const char * argv[]) {
@@ -107,6 +140,18 @@ int main(int argc, const char * argv[]) {
 //        shared_ptr<person> p2(p);
 //    } // ~person();
 //
+    
+    
+    shared_ptr<person> p(new person());
+    shared_ptr<car> c(new car());
+    
+    p->m_car = c;
+    c->m_person = p;
+    
+    
+    
+    
+    
     
     return 0;
 }
