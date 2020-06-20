@@ -24,9 +24,30 @@ void func(int *v) {
 #endif
 
 
+#if 0
 void func() {
     cout << __PRETTY_FUNCTION__ << endl;
 }
+#endif
+
+
+int add(int v1, int v2) {
+    return v1 + v2;
+}
+int sub(int v1, int v2) {
+    return v1 - v2;
+}
+int multiple(int v1, int v2) {
+    return v1 * v2;
+}
+int divide(int v1, int v2) {
+    return v1 / v2;
+}
+int task(int v1, int v2, int(*func)(int, int)) {
+    return func(v1, v2);
+}
+
+
 
 
 int main(int argc, const char * argv[]) {
@@ -64,11 +85,68 @@ int main(int argc, const char * argv[]) {
 //    };
 //    p();
     
-    int (*p)(int, int) = [] (int a, int b) -> int {
-        return a + b;
+//    int (*p)(int, int) = [] (int a, int b) -> int {
+//        return a + b;
+//    };
+//    int c = p(1, 2);
+//    cout << c << endl;
+    
+    
+//    auto p = [] (int a, int b) {
+//        return a + b;
+//    };
+//    cout << p(1, 2) << endl;
+    
+    
+//    cout << task(20, 10, add) << endl;
+//    cout << task(20, 10, sub) << endl;
+//    cout << task(20, 10, multiple) << endl;
+//    cout << task(20, 10, divide) << endl;
+    
+//    cout << task(20, 10, [] (int v1, int v2) {
+//        return v1 + v2;
+//    }) << endl;
+//    cout << task(20, 10, [] (int v1, int v2) {
+//        return v1 - v2;
+//    }) << endl;
+//    cout << task(20, 10, [] (int v1, int v2) { return v1 * v2; }) << endl;
+//    cout << task(20, 10, [] (int v1, int v2) { return v1 / v2; }) << endl;
+    
+    
+    
+//    int a = 10;
+//    int b = 20;
+//
+//    // = is default value capture
+//    auto func = [a, b] { // [a, b] or [=]
+//        cout << a << ", " << b << endl;
+//    };
+//    a = 30;
+//    func();
+//
+//    // & is reference capture
+//    auto func_ = [&a, b] {
+//        cout << a << ", " << b << endl;
+//    };
+//    a = 30;
+//    func_();
+
+    
+    int a = 10;
+//    auto func = [&a] {
+//        a++;
+//    };
+//    func();
+  
+    auto func = [a] () mutable { // value capture
+        a++;
+        
+        cout << a << endl;
     };
-    int c = p(1, 2);
-    cout << c << endl;
+    func();
+    
+    cout << a << endl;
+    
     
     
     
