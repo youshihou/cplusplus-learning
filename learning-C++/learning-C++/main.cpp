@@ -142,13 +142,20 @@ int main(int argc, const char * argv[]) {
 //
     
     
-    shared_ptr<person> p(new person());
-    shared_ptr<car> c(new car());
+//    shared_ptr<person> p(new person());
+//    shared_ptr<car> c(new car());
+//
+//    p->m_car = c;
+//    c->m_person = p;
     
-    p->m_car = c;
-    c->m_person = p;
     
+    // at the same time can only be one point
+//    unique_ptr<person> p1(new person());
+//    unique_ptr<person> p2 = p; // ERROR!!!
+//    unique_ptr<person> p3(p); // ERROR!!!
     
+    unique_ptr<person> p1(new person());
+    unique_ptr<person> p2 = move(p1);
     
     
     
