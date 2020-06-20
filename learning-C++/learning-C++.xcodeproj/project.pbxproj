@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032A42C8249DBD8100845702 /* basic-exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032A42C7249DBD8100845702 /* basic-exception.cpp */; };
 		035570B92493A8B500183690 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570B82493A8B500183690 /* main.cpp */; };
 		035570C62494F3CA00183690 /* basic-grammar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570C52494F3CA00183690 /* basic-grammar.cpp */; };
 		035570C82495C02200183690 /* basic-constructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035570C72495C02200183690 /* basic-constructor.cpp */; };
@@ -44,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		032A42C7249DBD8100845702 /* basic-exception.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-exception.cpp"; sourceTree = "<group>"; };
 		035570B52493A8B500183690 /* learning-C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "learning-C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		035570B82493A8B500183690 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		035570C52494F3CA00183690 /* basic-grammar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-grammar.cpp"; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				03AD5A80249CF24200894280 /* basic-template.cpp */,
 				03AD5A82249D0C3200894280 /* basic-cast.cpp */,
 				03AD5A84249DA6B900894280 /* basic-cplusplus-newfeatures.cpp */,
+				032A42C7249DBD8100845702 /* basic-exception.cpp */,
 				03CB48F0249BAFB80097E8A1 /* array.hpp */,
 				035570CC2495D91E00183690 /* Person.hpp */,
 				035570CB2495D91E00183690 /* Person.cpp */,
@@ -200,6 +203,7 @@
 				035D13D32497B6A7007ED0E3 /* basic-copy-constructor.cpp in Sources */,
 				035570CF2495E13000183690 /* basic_namespace.cpp in Sources */,
 				03A764382498E2180032858F /* basic-anonymous-object.cpp in Sources */,
+				032A42C8249DBD8100845702 /* basic-exception.cpp in Sources */,
 				035D13D12497A81E007ED0E3 /* basic-const.cpp in Sources */,
 				035570D5249624B700183690 /* basic-polymorphism.cpp in Sources */,
 				035570CA2495C84B00183690 /* basic-destructor.cpp in Sources */,
