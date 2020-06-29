@@ -1,2 +1,2 @@
 # art
-learning C++
+cplusplus learning
