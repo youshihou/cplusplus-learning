@@ -1,2 +1,1 @@
-# art
-cplusplus learning
+# cplusplus learning
