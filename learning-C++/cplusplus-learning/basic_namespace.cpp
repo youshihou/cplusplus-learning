@@ -1,6 +1,6 @@
 //
 //  basic_namespace.cpp
-//  learning-C++
+//  cplusplus-learning
 //
 //  Created by Ankui on 6/14/20.
 //  Copyright © 2020 Ankui. All rights reserved.
