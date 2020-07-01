@@ -48,7 +48,7 @@
 /* Begin PBXFileReference section */
 		032A42C7249DBD8100845702 /* basic-exception.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-exception.cpp"; sourceTree = "<group>"; };
 		032A42C9249DD8CA00845702 /* basic-smart-pointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-smart-pointer.cpp"; sourceTree = "<group>"; };
-		035570B52493A8B500183690 /* cplusplus-learning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cplusplus-learning"; sourceTree = BUILT_PRODUCTS_DIR; };
+		035570B52493A8B500183690 /* cplusplus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cplusplus; sourceTree = BUILT_PRODUCTS_DIR; };
 		035570B82493A8B500183690 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		035570C52494F3CA00183690 /* basic-grammar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-grammar.cpp"; sourceTree = "<group>"; };
 		035570C72495C02200183690 /* basic-constructor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "basic-constructor.cpp"; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		035570B62493A8B500183690 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				035570B52493A8B500183690 /* cplusplus-learning */,
+				035570B52493A8B500183690 /* cplusplus */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		035570B42493A8B500183690 /* cplusplus-learning */ = {
+		035570B42493A8B500183690 /* cplusplus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 035570BC2493A8B500183690 /* Build configuration list for PBXNativeTarget "cplusplus-learning" */;
+			buildConfigurationList = 035570BC2493A8B500183690 /* Build configuration list for PBXNativeTarget "cplusplus" */;
 			buildPhases = (
 				035570B12493A8B500183690 /* Sources */,
 				035570B22493A8B500183690 /* Frameworks */,
@@ -150,9 +150,9 @@
 			);
 			dependencies = (
 			);
-			name = "cplusplus-learning";
+			name = cplusplus;
 			productName = "learning-C++";
-			productReference = 035570B52493A8B500183690 /* cplusplus-learning */;
+			productReference = 035570B52493A8B500183690 /* cplusplus */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -169,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 035570B02493A8B500183690 /* Build configuration list for PBXProject "cplusplus-learning" */;
+			buildConfigurationList = 035570B02493A8B500183690 /* Build configuration list for PBXProject "cplusplus" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -182,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				035570B42493A8B500183690 /* cplusplus-learning */,
+				035570B42493A8B500183690 /* cplusplus */,
 			);
 		};
 /* End PBXProject section */
@@ -350,7 +350,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		035570B02493A8B500183690 /* Build configuration list for PBXProject "cplusplus-learning" */ = {
+		035570B02493A8B500183690 /* Build configuration list for PBXProject "cplusplus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				035570BA2493A8B500183690 /* Debug */,
@@ -359,7 +359,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		035570BC2493A8B500183690 /* Build configuration list for PBXNativeTarget "cplusplus-learning" */ = {
+		035570BC2493A8B500183690 /* Build configuration list for PBXNativeTarget "cplusplus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				035570BD2493A8B500183690 /* Debug */,
