@@ -89,7 +89,7 @@
 		035570AC2493A8B500183690 = {
 			isa = PBXGroup;
 			children = (
-				035570B72493A8B500183690 /* cplusplus-learning */,
+				035570B72493A8B500183690 /* cplusplus */,
 				035570B62493A8B500183690 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,7 +102,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		035570B72493A8B500183690 /* cplusplus-learning */ = {
+		035570B72493A8B500183690 /* cplusplus */ = {
 			isa = PBXGroup;
 			children = (
 				035570C52494F3CA00183690 /* basic-grammar.cpp */,
@@ -132,7 +132,7 @@
 				035570CB2495D91E00183690 /* Person.cpp */,
 				035570B82493A8B500183690 /* main.cpp */,
 			);
-			path = "cplusplus-learning";
+			path = cplusplus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
